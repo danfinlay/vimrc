@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.nvim/plugged')
 "  After updates run :PlugInstall
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
@@ -29,19 +29,20 @@ call plug#end()
 augroup reload_vimrc " {
 	autocmd!
 	autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END " }    
+augroup END " }
 
 " Colors
 colorscheme gruvbox
-set background=dark
+set background=light
 
 " Line numbers by default
 set number
 
 " Use 2 spaces as tabs
-:set expandtab
-:set tabstop=2
-:set shiftwidth=2
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set backspace=2 " make backspace work like most other apps
 
 " Nerdtree setup
 autocmd StdinReadPre * let s:std_in=1
@@ -52,3 +53,4 @@ map <C-g> :NERDTreeToggle<CR>
 let g:surround_45 = "<% \r %>"
 let g:surround_61 = "<%= \r %>"
 let g:surround_33 = "```\r```"
+
