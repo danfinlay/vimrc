@@ -32,7 +32,7 @@ augroup reload_vimrc " {
 augroup END " }
 
 " Colors
-colorscheme gruvbox
+colorscheme delek
 set background=light
 
 " Line numbers by default
@@ -53,4 +53,13 @@ map <C-g> :NERDTreeToggle<CR>
 let g:surround_45 = "<% \r %>"
 let g:surround_61 = "<%= \r %>"
 let g:surround_33 = "```\r```"
+
+" Trim whitespace on save
+function! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+autocmd BufWritePre *.h,*.c,*.java,*.js,*.rb,*.html,*.css,*.scss,*.hbs :call <SID>StripTrailingWhitespaces()
 
