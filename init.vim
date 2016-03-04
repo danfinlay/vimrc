@@ -21,6 +21,8 @@ Plug 'https://github.com/tpope/vim-eunuch.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/tomlion/vim-solidity.git'
+Plug 'othree/yajs.vim' " ES6 syntax highlighting"
 call plug#end()
 " Then reload .vimrc and :PlugInstall to install plugins.
 " Visit https://github.com/junegunn/vim-plug for more information.
@@ -32,7 +34,7 @@ augroup reload_vimrc " {
 augroup END " }
 
 " Colors
-colorscheme delek
+colorscheme slate
 set background=light
 
 " Line numbers by default
@@ -63,3 +65,5 @@ function! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre *.h,*.c,*.java,*.js,*.rb,*.html,*.css,*.scss,*.hbs :call <SID>StripTrailingWhitespaces()
 
+" Share mac system clipboard
+set clipboard=unnamed
