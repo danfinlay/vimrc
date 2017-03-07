@@ -23,6 +23,15 @@ Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tomlion/vim-solidity.git'
 Plug 'othree/yajs.vim' " ES6 syntax highlighting"
+
+" Autocomplete stuff from this article:
+" https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'ervandew/supertab'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+
 call plug#end()
 " Then reload .vimrc and :PlugInstall to install plugins.
 " Visit https://github.com/junegunn/vim-plug for more information.
@@ -46,6 +55,10 @@ set tabstop=2
 set shiftwidth=2
 set backspace=2 " make backspace work like most other apps
 
+" Allow auto indenting
+filetype plugin indent on
+syntax enable
+
 " Nerdtree setup
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -63,7 +76,12 @@ function! <SID>StripTrailingWhitespaces()
   %s/\s\+$//e
   call cursor(l, c)
 endfun
-autocmd BufWritePre *.h,*.c,*.java,*.js,*.rb,*.html,*.css,*.scss,*.hbs :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.h,*.md,*.sol,*.c,*.java,*.js,*.rb,*.html,*.css,*.scss,*.hbs :call <SID>StripTrailingWhitespaces()
 
 " Share mac system clipboard
 set clipboard=unnamed
+
+" Autocompleter default
+" as per https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
+let g:deoplete#enable_at_startup = 1
+
