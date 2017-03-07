@@ -8,7 +8,6 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/isRuslan/vim-es6.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/morhetz/gruvbox.git'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'https://github.com/JulesWang/css.vim.git'
