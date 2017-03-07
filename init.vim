@@ -5,7 +5,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Lazy loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' } " Language loading
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'  }
 Plug 'https://github.com/isRuslan/vim-es6.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/morhetz/gruvbox.git'
