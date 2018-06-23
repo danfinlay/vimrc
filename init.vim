@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Lazy loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' } " Language loading
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/isRuslan/vim-es6.git'
+Plug 'leafgarland/typescript-vim' " Typescript
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/morhetz/gruvbox.git'
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
@@ -21,6 +22,8 @@ Plug 'https://github.com/tpope/vim-endwise.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/tomlion/vim-solidity.git'
 Plug 'othree/yajs.vim' " ES6 syntax highlighting"
+Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'vim-latex/vim-latex'
 
 " Autocomplete stuff from this article:
 " https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
@@ -82,4 +85,8 @@ set clipboard=unnamed
 " Autocompleter default
 " as per https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
 let g:deoplete#enable_at_startup = 1
+
+" JSDoc highlighting
+let g:javascript_plugin_jsdoc = 1
+
 
