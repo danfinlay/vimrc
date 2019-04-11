@@ -25,6 +25,10 @@ Plug 'othree/yajs.vim' " ES6 syntax highlighting"
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'vim-latex/vim-latex'
 
+" Git management
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+
 " Autocomplete stuff from this article:
 " https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -88,5 +92,4 @@ let g:deoplete#enable_at_startup = 1
 
 " JSDoc highlighting
 let g:javascript_plugin_jsdoc = 1
-
 
