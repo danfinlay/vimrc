@@ -1,8 +1,11 @@
+" This line makes pacman-installed global Arch Linux vim packages work.
+source /usr/share/nvim/archlinux.vim
+
 call plug#begin('~/.nvim/plugged')
 "  After updates run :PlugInstall
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Lazy loading
+" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Lazy loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' } " Language loading
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/isRuslan/vim-es6.git'
