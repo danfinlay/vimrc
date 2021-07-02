@@ -1,36 +1,32 @@
 " This line makes pacman-installed global Arch Linux vim packages work.
-source /usr/share/nvim/archlinux.vim
+" source /usr/share/nvim/archlinux.vim
 
 call plug#begin('~/.nvim/plugged')
 "  After updates run :PlugInstall
-Plug 'junegunn/seoul256.vim'
-Plug 'junegunn/vim-easy-align'
-" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Lazy loading
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' } " Language loading
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+"Plug 'junegunn/seoul256.vim'
+"Plug 'junegunn/vim-easy-align'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " Lazy loading
 Plug 'https://github.com/isRuslan/vim-es6.git'
-Plug 'leafgarland/typescript-vim' " Typescript
-Plug 'https://github.com/jiangmiao/auto-pairs.git'
-Plug 'https://github.com/morhetz/gruvbox.git'
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'https://github.com/JulesWang/css.vim.git'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
-Plug 'https://github.com/scrooloose/syntastic.git'
-Plug 'https://github.com/tpope/vim-commentary.git'
-Plug 'https://github.com/tpope/vim-eunuch.git'
-Plug 'https://github.com/tpope/vim-endwise.git'
-Plug 'https://github.com/tpope/vim-endwise.git'
-Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'https://github.com/tomlion/vim-solidity.git'
+"Plug 'leafgarland/typescript-vim' " Typescript
+"Plug 'https://github.com/jiangmiao/auto-pairs.git'
+"Plug 'https://github.com/morhetz/gruvbox.git'
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'https://github.com/JulesWang/css.vim.git'
+"Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+"Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
+"Plug 'https://github.com/scrooloose/syntastic.git'
+"Plug 'https://github.com/tpope/vim-commentary.git'
+"Plug 'https://github.com/tpope/vim-eunuch.git'
+"Plug 'https://github.com/tpope/vim-endwise.git'
+"Plug 'https://github.com/tpope/vim-fugitive.git'
+"Plug 'https://github.com/tomlion/vim-solidity.git'
 Plug 'othree/yajs.vim' " ES6 syntax highlighting"
 Plug 'https://github.com/pangloss/vim-javascript.git'
-Plug 'vim-latex/vim-latex'
+"Plug 'vim-latex/vim-latex'
 
 " Git management
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+"Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-rhubarb'
 
 " Autocomplete stuff from this article:
 " https://www.gregjs.com/vim/2016/neovim-deoplete-jspc-ultisnips-and-tern-a-config-for-kickass-autocompletion/
